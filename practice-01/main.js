@@ -113,3 +113,89 @@ console.log(evens);
 
 let raisedToThirdNumbers = evens.map((item) => item ** 3);
 console.log(raisedToThirdNumbers)
+
+// Practice 2
+
+console.log(typeof ("0" + 1));
+
+console.log("2" * 3);
+let n = "4";
+console.log("2" * 3 + parseInt("10"));
+
+
+console.log("2" * 3 + Number("10"));
+
+let n_number = +n;
+console.log(typeof(n_number))
+console.log(typeof(n));
+
+let c = 'c'
+console.log(typeof(c));
+
+console.log(Number("26"))
+
+// 1.
+console.log("31" + 2 + "4"); // 3124
+console.log("3" * 4 + "100"); // 12100
+
+//
+
+
+
+let accumulation = 0;
+const nums = [23, 56, 100, 14];
+for(const item of nums) {
+    accumulation = accumulation + item;
+}
+
+
+console.log(Math.max(2, 100));
+
+let resultReduce = nums.reduce((acc, item)=> item > acc ? item : acc, -Infinity); // -Infinity is the initial value
+console.log("Result with reduce: " + resultReduce);
+
+let resultReduce2 = nums.reduce((max, curr)=> Math.max(max, curr), -Infinity); // -Infinity is the initial value
+console.log(resultReduce2)
+
+
+const car = {
+    brand: "Honda",
+    year: 2020,
+    color: "black"
+}
+
+console.log(car)
+
+const cars = [];
+
+cars.push(car);
+cars.push({
+    brand: "Tesla",
+    year: 2024,
+    color: "white"
+})
+
+
+console.log(cars)
+console.log(cars.length)
+
+const brands = cars.map((car) => car.brand);
+console.log(brands)
+
+const after2022 = cars.filter((car) => car.year > 2022); /* [{
+    brand: "Tesla",
+    year: 2024,
+    color: "white"
+}]*/
+console.log(`There are ${after2022.length} cars produced after 2022.`);
+
+/*
+
+3 .pop() -> 3
+
+.push(4)
+4
+2
+1
+_
+*/
