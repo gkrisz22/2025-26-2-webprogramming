@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .watched {
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Movie List Manager</h1>
+
+    <input type="text" id="search" placeholder="Search by title" />
+    <ul id="movie-list">
+        <li>Hello</li>
+    </ul>
+
+    <hr>
+    <h2>Add a new movie</h2>
+
+    <input  type="text" id="new-title" placeholder="Title" />
+    <input type="text" id="new-genre" placeholder="Genre" />
+    <input type="number" min="0" max="10" step="0.1" placeholder="Rating" id="new-rating" />
+    <button id="add-btn">Add Movie</button>
+
+
+    <script src="./movies.js"></script>
+</body>
+</html>
