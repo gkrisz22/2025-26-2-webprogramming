@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <h1>Pixel Art Editor</h1>
+
+    <div id="app">
+        <!-- Left part -->
+        <div id="editor-section">
+            <div id="grid-controls">
+                <label>Width: <input type="number" id="grid-width" value="10" /></label> 
+                <label>Height: <input type="number" id="grid-height" value="10" /></label> 
+                <button id="generate-btn">Generate Grid</button>
+            </div>
+
+            <div id="grid-container"></div>
+
+            <button id="save-btn">Save</button>
+        </div>
+
+        <!-- Middle part -->
+        <div id="color-section">
+            <h2>Color</h2>
+            <div id="current-color-display"></div>
+            <input type="color" id="color-picker" value="#ff0000" />
+        </div>
+
+        <!-- Right part -->
+        <div id="list-section">
+            <h2>Pixel Arts</h2>
+            <button id="new-btn">+ New</button>
+
+            <div id="pixel-art-list"></div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; padding: 16px; }
+h1 { margin-bottom: 16px; }
+h2 { margin-bottom: 8px; font-size: 1rem; }
+button { padding: 6px 12px; cursor: pointer; }
+
+/* Three-column layout */
+#app {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* --- I. Grid controls --- */
+#grid-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+#grid-controls input { width: 56px; }
+
+/* --- II. Edit table (from task spec) --- */
+table.edit {
+    border-collapse: collapse;
+    cursor: crosshair;
+    user-select: none;
+    margin-bottom: 12px;
+}
+table.edit td {
+    border: 1px solid lightgray;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+/* --- III. Color section --- */
+#color-section {
+    min-width: 100px;
+}
+#current-color-display {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    margin: 8px 0;
+}
+#color-picker {
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+}
+
+/* --- IV. Pixel Art list --- */
+#list-section {
+    min-width: 140px;
+}
+#new-btn { margin-bottom: 10px; }
+
+.pixel-art-item {
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+.pixel-art-item.active { border-color: blue; }
+
+/* Preview table (from task spec) */
+table.preview { border-collapse: collapse; }
+table.preview td {
+    border: none;
+    width: 3px;
+    height: 3px;
+    padding: 0;
+}
+
+
+
+
+ 
