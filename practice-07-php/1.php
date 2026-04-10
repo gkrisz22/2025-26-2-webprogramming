@@ -1,5 +1,6 @@
 <?php 
 
+// console.log("")
 echo "Hello World!<br />"; // \n = <br />
 
 $x = 5;
@@ -22,6 +23,7 @@ print_r($a);
 echo "</pre>";
 echo $a[0]. "<br />";
 
+
 // Loops in PHP
 for($i = 0; $i < count($a); $i++) {
     echo "This is the ". $i. "-th element: ".$a[$i] . "<br />";
@@ -31,6 +33,7 @@ foreach($a as $item) { // In traditional for loop, $item = $a[$i]
     echo "This is: ".$item . "<br />";
 }
 
+//              [0]  => 1
 foreach($a as $index => $value) { 
     echo "This is the ". $index. "-th element: ".$value . "<br />";
 }
@@ -49,10 +52,9 @@ $car = [
 
 // In JS: [1, 2, 3].join(",") -> "1,2,3"
 echo implode(", ", $a);
+// Output: "1,2,3,4,5,6"
 
 // In JS: "1,2,3".split(",") -> [1, 2, 3]
 echo "<pre>";
 print_r(explode(", ", "1, 2, 3, 4, 5, 6"));
 echo "</pre>";
-
-?>
