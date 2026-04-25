@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Asten",
+        "year": 1813,
+        "read": false
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960,
+        "read": false
+    }
+]
