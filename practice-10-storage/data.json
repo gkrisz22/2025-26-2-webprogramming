@@ -1,0 +1,15 @@
+{
+    "69fc53c789f06": {
+        "title": "test5",
+        "author": "test5",
+        "year": 2000,
+        "read": false
+    },
+    "69fc55b4532a9": {
+        "title": "Test",
+        "author": "Test",
+        "year": 2000,
+        "read": true,
+        "id": "69fc55b4532a9"
+    }
+}
